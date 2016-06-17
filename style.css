@@ -1,0 +1,14 @@
+* {
+	font-family: 'Lato', sans-serif;
+}
+
+.background-img {
+	background-image: url('./images/tablemtnview.jpg');
+	background-size: cover;
+	height: 100vh;
+}
+
+.title-jumbotron {
+	opacity: .5;
+	height: 100vh;
+}
