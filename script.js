@@ -10,5 +10,16 @@ app.config(function($routeProvider) {
 });
 
 app.controller("StudentCtrl", function($scope, $http, $filter) {
+  $scope.images = [
+    "lionsheadgroup.jpg",
+    "dancing.jpg",
+    "elephants.jpg",
+    "rugby.jpg",
+    "safari.jpg",
+    "waterfront.jpg",
+    "tablemountain.jpg",
+    "welcome.jpeg",
+    "safari2.jpg",
+  ];
 
 });

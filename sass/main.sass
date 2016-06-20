@@ -1,5 +1,27 @@
+$ixpink: #e31f80
+$ixpink2: #e31f80
+$ixblue: #3a81ba
+$ixgreen: #4abd9b
+$ixgray: #434343
+$smoke: #F3F6F8
+
+@font-face
+  font-family: DefaultFont
+  src: url("https://s3.amazonaws.com/ixassets/fonts/DefaultNormal.otf") format("opentype")
+  font-weight: normal
+  font-style: normal
+
+*
+  box-sizing: border-box
+
 body 
   font-family: Lato
+  color: #2e3137
+  
+a
+  text-decoration: none
+  &:hover
+    text-decoration: none
 
 .background-img
   background-image: url('../images/tablemtnview.jpg')
@@ -9,3 +31,77 @@ body
 .title-jumbotron 
   opacity: .5
   height: 100vh
+  
+.hero
+  height: 100vh
+  width: 100vw
+  background-color: $ixpink
+  background-image: url('../images/tablemtnview.jpg')
+  background-size: cover
+  color: white
+  font-size: 60px
+  div
+    position: absolute
+    left: 30%
+    top: 40%
+    transform: translate(-30%, -50%)
+    display: inline-block
+    min-width: 300px
+    
+  h1
+    margin: 0
+    font-size: 60px
+    font-weight: 300
+    span
+      display: inline-block
+      background: $ixpink
+      padding: 12px 4px 0px 8px
+      line-height: .8
+      font-weight: 100
+      text-transform: uppercase
+      font-family: DefaultFont
+    
+  h2
+    font-weight: 300
+    font-size: 20px
+
+.weeks-tabs
+  background: $smoke
+  ol
+    display: flex
+    margin: 0
+    padding: 0
+    
+  li 
+    width: 20%
+    text-align: center
+    list-style: none
+    
+    a
+      padding: 30px 0
+      display: block
+      letter-spacing: .5px
+      
+      &:hover
+        h4
+          opacity: 1
+      
+    h3 
+      text-transform: uppercase
+      font-size: 16px
+      color: $ixblue
+      margin: 0 0 5px
+      
+    h4
+      font-size: 12px
+      margin: 0
+      color: $ixgray
+      opacity: .4
+      
+    
+.week
+  padding-top: 30px
+  h1
+    font-size: 52px
+    font-weight: 300
+    
