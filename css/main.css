@@ -1,3 +1,11 @@
+::selection {
+  background: #e31f80;
+  color: white; }
+
+::-moz-selection {
+  background: #e31f80;
+  color: white; }
+
 @font-face {
   font-family: DefaultFont;
   src: url("https://s3.amazonaws.com/ixassets/fonts/DefaultNormal.otf") format("opentype");
@@ -8,7 +16,8 @@
 
 body {
   font-family: Lato;
-  color: #2e3137; }
+  color: #2e3137;
+  line-height: 1.4; }
 
 a {
   text-decoration: none; }
@@ -68,9 +77,12 @@ a {
     .weeks-tabs li a {
       padding: 30px 0;
       display: block;
-      letter-spacing: 0.5px; }
-      .weeks-tabs li a:hover h4 {
-        opacity: 1; }
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s; }
+      .weeks-tabs li a:hover {
+        border-bottom: 2px solid #3a81ba; }
+        .weeks-tabs li a:hover h4 {
+          opacity: 1; }
     .weeks-tabs li h3 {
       text-transform: uppercase;
       font-size: 16px;
@@ -84,6 +96,24 @@ a {
 
 .week {
   padding-top: 30px; }
+  .week h2 {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600; }
   .week h1 {
     font-size: 52px;
+    font-weight: 300;
+    margin-bottom: 20px; }
+  .week .block {
+    padding: 20px 20px 40px 20px;
+    border-radius: 3px;
+    border: 1px solid #F3F6F8;
+    margin: 30px 0; }
+  .week .block__contents {
+    max-width: 750px;
+    text-align: left;
+    margin: 0px auto;
+    font-size: 18px;
     font-weight: 300; }
+  .week .block--full {
+    text-align: center; }
