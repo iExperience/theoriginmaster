@@ -17,12 +17,13 @@
 body {
   font-family: Lato;
   color: #2e3137;
-  line-height: 1.4; }
+  line-height: 1.4;
+  background: rgba(0, 0, 3, 0.04); }
 
 a {
   text-decoration: none;
   color: #3a81ba; }
-  a:hover {
+  a:hover, a:active, a:focus {
     text-decoration: none; }
 
 .background-img {
@@ -66,7 +67,9 @@ a {
     font-size: 20px; }
 
 .weeks-tabs {
-  background: #F3F6F8; }
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative; }
   .weeks-tabs ol {
     display: flex;
     margin: 0;
@@ -161,8 +164,9 @@ a {
 .block {
   padding: 20px 20px 40px 20px;
   border-radius: 3px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  margin: 30px 0; }
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  margin: 30px 0;
+  background: white; }
 
 .block__contents {
   max-width: 750px;
@@ -192,3 +196,17 @@ a {
   left: 0;
   right: 0;
   z-index: 10; }
+
+.main.ng-enter {
+  transition: opacity 1s;
+  opacity: 0; }
+
+.main.ng-enter-active {
+  opacity: 1; }
+
+.main.ng-leave {
+  transition: opacity 0.2s;
+  opacity: 1; }
+
+.main.ng-leave-active {
+  opacity: 0; }
