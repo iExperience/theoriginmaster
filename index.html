@@ -6,11 +6,38 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,400i,700,900" rel="stylesheet">
 	<link rel="stylesheet" href="./css/main.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
-	<script src="./script.js"></script>
 </head>
 <body ng-app="FinalApp">
+	<div class="hero">
+		<div>
+			<h1><span>You came.</span><br><span>You saw.</span><br><span>You learned.</span></h1>
+			<h2>2016 iXperience Web Dev Session 1</h2>
+		</div>
+	</div>
+	<div class="weeks-tabs" sticky use-placeholder>
+		<ol>
+			<li>
+				<a href="#/week1"><h3>Week 1</h3><h4>HTML &amp; CSS</h4></a>
+			</li>
+			<li>
+				<a href="#/week1"><h3>Week 2</h3><h4>JavaScript &amp; jQuery</h4></a>
+			</li>
+			<li>
+				<a href="#/week1"><h3>Week 3</h3><h4>AngularJS</h4></a>
+			</li>
+			<li>
+				<a href="#/week1"><h3>Week 4</h3><h4>Databases &amp; Projects</h4></a>
+			</li>
+			<li>
+				<a href="#/week1"><h3>And beyond...</h3><h4>HTML &amp; CSS</h4></a>
+			</li>
+		</ol>
+	</div>
 	<div ng-view></div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
+	<script src="./js/sticky.js"></script>
+	<script src="./script.js"></script>
 </body>
 </html>

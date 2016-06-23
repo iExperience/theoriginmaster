@@ -1,4 +1,4 @@
-var app = angular.module("FinalApp", ["ngRoute"]);
+var app = angular.module("FinalApp", ["ngRoute", "sticky"]);
 
 app.config(function($routeProvider) {
   $routeProvider.when("/", {
@@ -23,3 +23,4 @@ app.controller("StudentCtrl", function($scope, $http, $filter) {
   ];
 
 });
+
