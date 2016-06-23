@@ -121,40 +121,43 @@ a {
   margin: 0;
   transition: transform 0.2s, box-shadow 0.4s;
   transform: scale(1); }
-  .students-grid .col-md-4:before {
-    position: absolute;
-    content: "";
-    display: block;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: white;
-    z-index: 2;
-    opacity: 0;
-    transition: all 0.2s; }
+  .students-grid .col-md-4 a {
+    display: block; }
+    .students-grid .col-md-4 a:before {
+      position: absolute;
+      content: "";
+      display: block;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: white;
+      z-index: 2;
+      opacity: 0;
+      transition: all 0.2s; }
   .students-grid .col-md-4:hover {
     transform: scale(1.03);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     z-index: 4; }
-    .students-grid .col-md-4:hover:before {
+    .students-grid .col-md-4:hover a:before {
       opacity: 0.8; }
     .students-grid .col-md-4:hover h3 {
       opacity: 1;
-      transform: translateY(-65%); }
+      transform: translate(-50%, -65%); }
 .students-grid h3 {
   position: absolute;
   top: 50%;
-  left: 0;
-  right: 0;
-  transform: translateY(-80%);
+  left: 50%;
+  transform: translate(-50%, -80%);
   text-align: center;
   transition: all 0.5s;
-  padding: 30px;
   display: block;
   opacity: 0;
   z-index: 3;
-  color: #e31f80; }
+  padding: 10px 8px 8px 8px;
+  background: #e31f80;
+  color: white;
+  font-family: DefaultFont; }
 
 .student {
   width: 100%;
