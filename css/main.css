@@ -20,7 +20,8 @@ body {
   line-height: 1.4; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #3a81ba; }
   a:hover {
     text-decoration: none; }
 
@@ -95,7 +96,8 @@ a {
       opacity: 0.4; }
 
 .week {
-  padding-top: 30px; }
+  padding-top: 30px;
+  padding-bottom: 80px; }
   .week h2 {
     text-transform: uppercase;
     font-size: 13px;
@@ -125,3 +127,15 @@ a {
 
 .block--full {
   text-align: center; }
+
+.resources ul, .resources ol {
+  padding: 0; }
+.resources li {
+  list-style: none;
+  margin: 1em 0;
+  color: #434343; }
+  .resources li a {
+    display: block;
+    font-size: 16px; }
+  .resources li p {
+    font-weight: 400; }
