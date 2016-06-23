@@ -263,3 +263,37 @@ a {
 
 .main.ng-leave-active {
   opacity: 0; }
+
+.week3-pic-big {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.week3-pic-div-big {
+  width: 100%;
+  height: 350px;
+  margin: auto;
+  padding: 15px; }
+
+.week3-pic-small {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.week3-pic-div-small {
+  width: 100%;
+  height: 175px;
+  margin: auto;
+  padding: 15px; }
+
+.week3-pic-xs {
+  width: 45%;
+  height: 100%;
+  object-fit: scale-down; }
+
+.ben-gabe {
+  margin-bottom: 10px; }
+
+.app-caption {
+  margin-bottom: 15px;
+  color: black; }

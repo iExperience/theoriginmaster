@@ -10,6 +10,9 @@ app.config(function($routeProvider) {
   $routeProvider.when("/week3", {
     templateUrl: "templates/week3.html"
   });
+  $routeProvider.when("/week4", {
+    templateUrl: "templates/week4.html"
+  });
   
   $routeProvider.otherwise("/week1");
 });
