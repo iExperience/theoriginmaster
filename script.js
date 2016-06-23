@@ -2,10 +2,10 @@ var app = angular.module("FinalApp", ["ngRoute", "sticky"]);
 
 app.config(function($routeProvider) {
   $routeProvider.when("/", {
-    templateUrl: "templates/home.html"
+    templateUrl: "templates/week1.html"
   })
-  $routeProvider.when("/week2", {
-    templateUrl: "templates/week2.html"
+  $routeProvider.when("/memories", {
+    templateUrl: "templates/memories.html"
   })
 });
 

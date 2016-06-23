@@ -123,25 +123,64 @@ a
     font-weight: 300
     margin-bottom: 20px
     
+.students-grid
+  .col-md-4
+    padding: 0
+    margin: 0
+    &:before  
+      position: absolute
+      content: ""
+      display: block
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background-color: white
+      z-index: 2
+      opacity: 0
+      transition: opacity .2s
+      
+    
+    &:hover
+      &:before
+        opacity: .8
+        
+      h3
+        opacity: 1
+        transform: translateY(-65%)
+        
+  h3
+    position: absolute
+    top: 50%
+    left: 0
+    right: 0
+    transform: translateY(-80%)
+    text-align: center
+    transition: all .5s
+    padding: 30px
+    display: block
+    opacity: 0
+    z-index: 3
+    color: $ixpink
+    
+    
+
 .student
-  width: 200px
+  width: 100%
+  height: 350px
   margin: auto
-
+  position: relative
+  
+  
 .student-pic 
-  width: 200px
-  height: 200px
+  width: 100%
+  height: 100%
   object-fit: cover
-
-.caption
-  width: 200px
-  margin: auto
-  padding-bottom: 15px
-  text-align: center
 
 .block
   padding: 20px 20px 40px 20px
   border-radius: 3px
-  border: 1px solid $smoke
+  border: 1px solid rgba(0,0,0,.1)
   margin: 30px 0
   
 .block__contents
