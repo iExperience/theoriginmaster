@@ -4,8 +4,11 @@ app.config(function($routeProvider) {
   $routeProvider.when("/week1", {
     templateUrl: "templates/week1.html"
   });
-  $routeProvider.when("/memories", {
-    templateUrl: "templates/memories.html"
+  $routeProvider.when("/week2", {
+    templateUrl: "templates/week2.html"
+  })
+  $routeProvider.when("/week3", {
+    templateUrl: "templates/week3.html"
   })
   
   $routeProvider.otherwise("/week1");
