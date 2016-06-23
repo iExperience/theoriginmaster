@@ -104,16 +104,19 @@ a {
     font-size: 52px;
     font-weight: 300;
     margin-bottom: 20px; }
-  .week .block {
-    padding: 20px 20px 40px 20px;
-    border-radius: 3px;
-    border: 1px solid #F3F6F8;
-    margin: 30px 0; }
-  .week .block__contents {
-    max-width: 750px;
-    text-align: left;
-    margin: 0px auto;
-    font-size: 18px;
-    font-weight: 300; }
-  .week .block--full {
-    text-align: center; }
+
+.block {
+  padding: 20px 20px 40px 20px;
+  border-radius: 3px;
+  border: 1px solid #F3F6F8;
+  margin: 30px 0; }
+
+.block__contents {
+  max-width: 750px;
+  text-align: left;
+  margin: 0px auto;
+  font-size: 18px;
+  font-weight: 300; }
+
+.block--full {
+  text-align: center; }
