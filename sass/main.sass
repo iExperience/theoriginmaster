@@ -5,6 +5,14 @@ $ixgreen: #4abd9b
 $ixgray: #434343
 $smoke: #F3F6F8
 
+::selection
+  background: $ixpink
+  color: white
+
+::-moz-selection
+  background: $ixpink2
+  color: white
+
 @font-face
   font-family: DefaultFont
   src: url("https://s3.amazonaws.com/ixassets/fonts/DefaultNormal.otf") format("opentype")
@@ -17,6 +25,7 @@ $smoke: #F3F6F8
 body 
   font-family: Lato
   color: #2e3137
+  line-height: 1.4
   
 a
   text-decoration: none
@@ -80,9 +89,11 @@ a
     a
       padding: 30px 0
       display: block
-      letter-spacing: .5px
+      border-bottom: 2px solid transparent
+      transition: all .2s
       
       &:hover
+        border-bottom: 2px solid $ixblue
         h4
           opacity: 1
       
@@ -101,12 +112,33 @@ a
     
 .week
   padding-top: 30px
+  h2 
+    text-transform: uppercase
+    font-size: 13px
+    font-weight: 600
   h1
     font-size: 52px
     font-weight: 300
+    margin-bottom: 20px
     
 .student-pic 
   width: 200px;
   height: 200px;
   object-fit: cover;
 
+.block
+  padding: 20px 20px 40px 20px
+  border-radius: 3px
+  border: 1px solid $smoke
+  margin: 30px 0
+  
+.block__contents
+  max-width: 750px
+  text-align: left
+  margin: 0px auto
+  font-size: 18px
+  font-weight: 300
+
+.block--full
+  text-align: center
+  
