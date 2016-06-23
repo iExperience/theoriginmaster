@@ -26,11 +26,12 @@ body
   font-family: Lato
   color: #2e3137
   line-height: 1.4
+  background: rgba(0,0,3,.04)  
   
 a
   text-decoration: none
   color: $ixblue
-  &:hover
+  &:hover, &:active, &:focus
     text-decoration: none
 
 .background-img
@@ -76,7 +77,9 @@ a
     font-size: 20px
 
 .weeks-tabs
-  background: $smoke
+  background: white
+  box-shadow: 0 2px 5px rgba(0,0,0,.1)
+  position: relative
   ol
     display: flex
     margin: 0
@@ -120,7 +123,6 @@ a
       color: $ixgray
       opacity: .4
       
-    
 .week
   padding-top: 30px
   padding-bottom: 80px
@@ -135,43 +137,53 @@ a
     
 .students-grid
   .col-md-4
+  
+    a
+      display: block
+      &:before  
+        position: absolute
+        content: ""
+        display: block
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background-color: white
+        z-index: 2
+        opacity: 0
+        transition: all .2s
+        
+      
     padding: 0
     margin: 0
-    &:before  
-      position: absolute
-      content: ""
-      display: block
-      top: 0
-      left: 0
-      right: 0
-      bottom: 0
-      background-color: white
-      z-index: 2
-      opacity: 0
-      transition: opacity .2s
-      
+    transition: transform .2s, box-shadow .4s
+    transform: scale(1.0)
     
     &:hover
-      &:before
+      transform: scale(1.03)
+      box-shadow: 0 4px 8px rgba(0,0,0,.3)
+      z-index: 4
+      a:before
         opacity: .8
         
       h3
         opacity: 1
-        transform: translateY(-65%)
+        transform: translate(-50%,-65%)
         
   h3
     position: absolute
     top: 50%
-    left: 0
-    right: 0
-    transform: translateY(-80%)
+    left: 50%
+    transform: translate(-50%,-80%)
     text-align: center
     transition: all .5s
-    padding: 30px
     display: block
     opacity: 0
     z-index: 3
-    color: $ixpink
+    padding: 10px 8px 8px 8px
+    background: $ixpink
+    color: white
+    font-family: DefaultFont
     
     
 
@@ -190,8 +202,9 @@ a
 .block
   padding: 20px 20px 40px 20px
   border-radius: 3px
-  border: 1px solid rgba(0,0,0,.1)
+  border: 1px solid rgba(0,0,0,.07)
   margin: 30px 0
+  background: white
   
 .block__contents
   max-width: 750px
@@ -224,3 +237,72 @@ a
   left: 0
   right: 0
   z-index: 10
+  
+
+.photos
+  position: relative
+  .photo
+    width: 800px
+    height: 600px
+    padding: 7px
+    border: 1px solid rgba(0,0,0,.15)
+    border-radius: 3px
+    background: white
+    box-shadow: 0 2px 5px rgba(0,0,0,.15)
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  .photo-1
+    transform: rotate(-2deg)
+    margin-left: -30px
+  
+  .photo-2
+    position: absolute
+    width: 600px
+    height: 500px
+    top: 100px
+    right: -20px
+    transform: rotate(1deg)
+    
+  .photo-3
+    width: 100%
+    height: 800px
+    
+  .photo-4,
+  .photo-5,
+  .photo-6
+    width: 36%
+    float: left
+    height: 280px
+    
+  .photo-4
+    transform: rotate(-2deg)
+    
+  .photo-5
+    transform: rotate(8deg)
+    margin-left: -9%
+    position: relative
+    left: 3%
+    z-index: 2
+    
+    
+  .photo-6
+    transform: rotate(1deg)
+    
+.main.ng-enter
+  transition: opacity 1s
+  opacity: 0 
+  
+.main.ng-enter-active
+  opacity: 1 
+  
+.main.ng-leave
+  transition: opacity .2s
+  opacity: 1
+  
+.main.ng-leave-active
+  opacity: 0
+ 
+ 

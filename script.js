@@ -1,4 +1,4 @@
-var app = angular.module("FinalApp", ["ngRoute", "sticky"]);
+var app = angular.module("FinalApp", ["ngRoute", "sticky", "ngAnimate"]);
 
 app.config(function($routeProvider) {
   $routeProvider.when("/week1", {
@@ -9,7 +9,7 @@ app.config(function($routeProvider) {
   })
   $routeProvider.when("/week3", {
     templateUrl: "templates/week3.html"
-  })
+  });
   
   $routeProvider.otherwise("/week1");
 });
@@ -17,6 +17,7 @@ app.config(function($routeProvider) {
 app.controller("AppCtrl", function($scope, $rootScope, $location) {
   $rootScope.$on('$routeChangeSuccess', function(e, current, pre) {
     $scope.route = $location.path().substring(1);
+    $(".main-wrap").velocity("scroll", {offset: -90});
   });
   
 });
