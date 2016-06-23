@@ -4,8 +4,8 @@ app.config(function($routeProvider) {
   $routeProvider.when("/", {
     templateUrl: "templates/home.html"
   })
-  $routeProvider.when("/memories", {
-    templateUrl: "templates/memories.html"
+  $routeProvider.when("/week2", {
+    templateUrl: "templates/week2.html"
   })
 });
 
