@@ -9,6 +9,10 @@ app.config(function($routeProvider) {
   })
 });
 
+app.controller("AppCtrl", function($scope, $rootScope) {
+  
+});
+
 app.controller("StudentCtrl", function($scope, $http, $filter) {
   $scope.images = [
     "lionsheadgroup.jpg",
