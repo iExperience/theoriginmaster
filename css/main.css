@@ -105,10 +105,20 @@ a {
     font-weight: 300;
     margin-bottom: 20px; }
 
+.student {
+  width: 200px;
+  margin: auto; }
+
 .student-pic {
   width: 200px;
   height: 200px;
   object-fit: cover; }
+
+.caption {
+  width: 200px;
+  margin: auto;
+  padding-bottom: 15px;
+  text-align: center; }
 
 .block {
   padding: 20px 20px 40px 20px;
