@@ -139,6 +139,8 @@ a
   .col-md-4
     padding: 0
     margin: 0
+    transition: transform .2s, box-shadow .4s
+    transform: scale(1.0)
     &:before  
       position: absolute
       content: ""
@@ -150,10 +152,13 @@ a
       background-color: white
       z-index: 2
       opacity: 0
-      transition: opacity .2s
+      transition: all .2s
       
     
     &:hover
+      transform: scale(1.03)
+      box-shadow: 0 4px 8px rgba(0,0,0,.3)
+      z-index: 4
       &:before
         opacity: .8
         
@@ -228,6 +233,59 @@ a
   right: 0
   z-index: 10
   
+
+.photos
+  position: relative
+  .photo
+    width: 800px
+    height: 600px
+    padding: 7px
+    border: 1px solid rgba(0,0,0,.15)
+    border-radius: 3px
+    background: white
+    box-shadow: 0 2px 5px rgba(0,0,0,.15)
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  .photo-1
+    transform: rotate(-2deg)
+    margin-left: -30px
+  
+  .photo-2
+    position: absolute
+    width: 600px
+    height: 500px
+    top: 100px
+    right: -20px
+    transform: rotate(1deg)
+    
+  .photo-3
+    width: 100%
+    height: 800px
+    
+  .photo-4,
+  .photo-5,
+  .photo-6
+    width: 36%
+    float: left
+    height: 280px
+    
+  .photo-4
+    transform: rotate(-2deg)
+    
+  .photo-5
+    transform: rotate(8deg)
+    margin-left: -9%
+    position: relative
+    left: 3%
+    z-index: 2
+    
+    
+  .photo-6
+    transform: rotate(1deg)
+    
 .main.ng-enter
   transition: opacity 1s
   opacity: 0 
@@ -241,4 +299,5 @@ a
   
 .main.ng-leave-active
   opacity: 0
+ 
  
