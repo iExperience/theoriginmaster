@@ -6,18 +6,20 @@ app.config(function($routeProvider) {
   });
   $routeProvider.when("/week2", {
     templateUrl: "templates/week2.html"
-  });
-  $routeProvider.when("/memories", {
-    templateUrl: "templates/memories.html"
   })
+  $routeProvider.when("/week3", {
+    templateUrl: "templates/week3.html"
+  });
   
   $routeProvider.otherwise("/week1");
 });
 
 app.controller("AppCtrl", function($scope, $rootScope, $location) {
   $rootScope.$on('$routeChangeSuccess', function(e, current, pre) {
+    if(pre) {
+      $(".main-wrap").velocity("scroll", {offset: -90});
+    }
     $scope.route = $location.path().substring(1);
-    $(".main-wrap").velocity("scroll", {offset: -90});
   });
   
 });
