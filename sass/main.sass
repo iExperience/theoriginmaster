@@ -334,6 +334,33 @@ a
 .ben-gabe
   margin-bottom: 10px
 
-.app-caption
-  margin-bottom: 15px
-  color: black
+
+.projects-grid 
+  .col-md-4
+    .app-caption
+      width: 80%
+      position: absolute
+      z-index: 4
+      top: 50%
+      transform: translateY(-50%)
+      margin-left: 10%
+      text-align: center
+      
+      &:hover
+        h3 
+          transform: none
+          
+        div,h4
+          opacity: 1
+      
+      h3
+        position: static
+        margin: 0
+        transform: none
+        
+      margin-bottom: 15px
+      color: black
+      
+      div, h4
+        opacity: 0
+        transition: opacity .3s
