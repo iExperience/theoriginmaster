@@ -294,6 +294,10 @@ a {
 .ben-gabe {
   margin-bottom: 10px; }
 
+.projects-grid .col-md-4:hover .app-caption h3 {
+  transform: none; }
+.projects-grid .col-md-4:hover .app-caption div, .projects-grid .col-md-4:hover .app-caption h4 {
+  opacity: 1; }
 .projects-grid .col-md-4 .app-caption {
   width: 80%;
   position: absolute;
@@ -304,14 +308,14 @@ a {
   text-align: center;
   margin-bottom: 15px;
   color: black; }
-  .projects-grid .col-md-4 .app-caption:hover h3 {
-    transform: none; }
-  .projects-grid .col-md-4 .app-caption:hover div, .projects-grid .col-md-4 .app-caption:hover h4 {
-    opacity: 1; }
   .projects-grid .col-md-4 .app-caption h3 {
     position: static;
     margin: 0;
-    transform: none; }
+    transform: none;
+    display: inline-block; }
+  .projects-grid .col-md-4 .app-caption h4 {
+    text-transform: uppercase;
+    font-size: 13px; }
   .projects-grid .col-md-4 .app-caption div, .projects-grid .col-md-4 .app-caption h4 {
     opacity: 0;
     transition: opacity 0.3s; }
