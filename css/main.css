@@ -294,6 +294,24 @@ a {
 .ben-gabe {
   margin-bottom: 10px; }
 
-.app-caption {
+.projects-grid .col-md-4 .app-caption {
+  width: 80%;
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 10%;
+  text-align: center;
   margin-bottom: 15px;
   color: black; }
+  .projects-grid .col-md-4 .app-caption:hover h3 {
+    transform: none; }
+  .projects-grid .col-md-4 .app-caption:hover div, .projects-grid .col-md-4 .app-caption:hover h4 {
+    opacity: 1; }
+  .projects-grid .col-md-4 .app-caption h3 {
+    position: static;
+    margin: 0;
+    transform: none; }
+  .projects-grid .col-md-4 .app-caption div, .projects-grid .col-md-4 .app-caption h4 {
+    opacity: 0;
+    transition: opacity 0.3s; }
