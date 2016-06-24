@@ -22,11 +22,13 @@ app.config(function($routeProvider) {
 
 app.controller("AppCtrl", function($scope, $rootScope, $location) {
   $rootScope.$on('$routeChangeSuccess', function(e, current, pre) {
-    if(pre) {
-      $(".main-wrap").velocity("scroll", {offset: -90});
-    }
     $scope.route = $location.path().substring(1);
   });
+  
+  $scope.tabClicked = function(page) {
+    $location.path(page);
+    $(".main-wrap").velocity("scroll", {offset: -97});
+  };
   
 });
 

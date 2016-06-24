@@ -17,19 +17,19 @@
 	<div class="weeks-tabs" sticky use-placeholder>
 		<ol>
 			<li ng-class="{'active': route == 'week1'}">
-				<a href="#/week1"><h3>Week 1</h3><h4>HTML &amp; CSS</h4></a>
+				<a ng-click="tabClicked('week1')"><h3>Week 1</h3><h4>HTML &amp; CSS</h4></a>
 			</li>
 			<li ng-class="{'active': route == 'week2'}">
-				<a href="#/week2"><h3>Week 2</h3><h4>JavaScript &amp; jQuery</h4></a>
+				<a ng-click="tabClicked('week2')"><h3>Week 2</h3><h4>JavaScript &amp; jQuery</h4></a>
 			</li>
 			<li ng-class="{'active': route == 'week3'}">
-				<a href="#/week3"><h3>Week 3</h3><h4>AngularJS</h4></a>
+				<a ng-click="tabClicked('week3')"><h3>Week 3</h3><h4>AngularJS</h4></a>
 			</li>
 			<li ng-class="{'active': route == 'week4'}">
-				<a href="#/week4"><h3>Week 4</h3><h4>Databases, Projects, CS</h4></a>
+				<a ng-click="tabClicked('week4')"><h3>Week 4</h3><h4>Databases, Projects, CS</h4></a>
 			</li>
 			<li  ng-class="{'active': route == 'beyond'}">
-				<a href="#/beyond"><h3>And beyond...</h3><h4>HTML &amp; CSS</h4></a>
+				<a ng-click="tabClicked('beyond')"><h3>And beyond...</h3><h4>HTML &amp; CSS</h4></a>
 			</li>
 		</ol>
 	</div>
